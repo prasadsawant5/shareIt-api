@@ -68,7 +68,7 @@ module.exports = function(app, __dirname) {
         User.find({ email: req.params.email }, function(err, user) {
             
             if (err) {
-                var err = new Error('Bad request!');
+                var err = new Error('Incorrect request!');
                 err.status = 400;
                 return next(err);
             }

@@ -4,7 +4,7 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var apiUserController = require('./routes/apiUserController');
-var apiFileControeller = require('./routes/apiFileController');
+var apiFileControeller = require('./routes/apiFIleController');
 var htmlController = require('./routes/htmlController');
 
 var app = express();

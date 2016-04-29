@@ -86,7 +86,7 @@ module.exports = function(app, __dirname) {
         
     });
     
-    app.get('/api/testUser', authenticate.verifyOrdinaryUser, function(req, res, next) {
+    app.get('/api/testUser', function(req, res, next) {
        
         var email = req.headers['email'];
        
